@@ -1,9 +1,9 @@
-# RN Transaction Fetch
+# Radon Transaction Fetch
 
 A simple template for sharing "Transaction Fetchers" for a range of accounts.
 
 
-Transaction Fetchers accept a `start_date`, an `end_date` and a `currency` and return a
+Transaction Fetchers are functions that accept a `start_date`, an `end_date` and a `currency` and return a
 list of objects in the original provider format.
 
 Parsing and transforming transactions into a standardised format is handled elsewhere.
@@ -36,6 +36,21 @@ python example_fetcher.py # Run the example
 cp example_fetcher.py my_fetcher.py
 ```
 Open `my_fetcher.py` and add your fetcher code to the `fetch_range` method.
+
+```py
+class MyFetcher(Fetcher):
+    def fetch_range(
+        self, start_date: datetime, end_date: datetime, currency: str
+    ) -> List[Dict]:
+        """
+        :param start_date: Python datetime object
+        :param end_date: Python datetime object
+        :param currency: ISO Currency String
+        :return: Array of provider transaction objects in original provider format
+        """
+        # TODO: Implement transaction fetching
+        return []
+```
 
 Test it out:
 ```sh

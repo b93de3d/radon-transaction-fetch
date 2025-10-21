@@ -31,14 +31,18 @@ class ExampleFetcher(Fetcher):
             {"type": "DEBIT", "amount": 400, "currency": "EUR"},
         ]
 
-    def fetch_range(self, start_date: datetime, end_date: datetime) -> List[Dict]:
+    def fetch_range(
+        self, start_date: datetime, end_date: datetime, currency: str
+    ) -> List[Dict]:
         return self._dummy_api_call()
 
 
 if __name__ == "__main__":
 
     example_fetcher = ExampleFetcher()
-    data = example_fetcher.fetch_range(datetime(2025, 1, 1), datetime(2025, 1, 15))
+    data = example_fetcher.fetch_range(
+        datetime(2025, 1, 1), datetime(2025, 1, 15), "EUR"
+    )
     print(f"FETCHED DATA FOR RANGE:")
     for d in data:
         print("  -->", d)
