@@ -65,3 +65,16 @@ Test it out:
 ```sh
 python my_fetcher.py
 ```
+
+## Other languages
+
+Prefer to develop your fetcher in another programming language? Be our guest! Simply add a folder to the
+`/langs` directory and start writing fetchers in your preferred language there. In its most general form,
+a Transaction Fetcher is a function or a method that accepts a `start_date`, `end_date` and `currency` and
+returns an array of transactions.
+
+## Code sharing, IP and Privacy
+
+This public template aims to provide a standard format for sharing transaction fetching code.
+You by are by no means required to use the repo as a mechanism for sharing the code you develop in this format.
+When you are ready to share your code with us, we will arrange a secure and private means of doing so.
