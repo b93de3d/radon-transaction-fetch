@@ -1,9 +1,9 @@
 
 --- 
 
-<p style="text-align: center">
+<div align="center">
     <img src="radon.webp" alt="My Image" style="width:240px;">
-</p>
+</div>
 
 --- 
 
