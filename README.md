@@ -25,8 +25,8 @@ could be of use to future users of the function.
 ## Quickstart
 
 ```sh
-git clone ...
-cd rn_transaction_fetch
+git clone git@github.com:b93de3d/radon-transaction-fetch.git
+cd radon-transaction-fetch
 cp example_config.json config.json
 python example_fetcher.py # Run the example
 ```
