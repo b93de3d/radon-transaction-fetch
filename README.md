@@ -65,8 +65,3 @@ Test it out:
 ```sh
 python my_fetcher.py
 ```
-
-## Sharing developed fetchers
-
-As fetcher.py files contain potentially sensitive credentials in the `CONFIG` variable, newly developed fetchers should
-not be commited to the codebase. Contact us to organise secure transfer of 
