@@ -2,7 +2,7 @@
 --- 
 
 <p style="text-align: center">
-    <img src="radon.webp" alt="My Image" style="max-width:250px;">
+    <img src="radon.webp" alt="My Image" style="width:240px;">
 </p>
 
 --- 
